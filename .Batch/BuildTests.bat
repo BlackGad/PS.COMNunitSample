@@ -1,3 +1,4 @@
+NuGet.Restore.bat
 msbuild .\..\ApplicationTests\ApplicationTests.csproj /verbosity:n /p:Configuration=Debug /p:Platform=AnyCPU
 msbuild .\..\ApplicationTests\ApplicationTests.csproj /verbosity:n /p:Configuration=Release /p:Platform=AnyCPU
 

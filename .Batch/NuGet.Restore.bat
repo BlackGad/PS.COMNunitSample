@@ -1,0 +1,1 @@
+NuGet.exe restore ..\PS.COMNunitSample.sln
