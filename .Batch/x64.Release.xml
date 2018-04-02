@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Failed" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-04-02 13:51:13Z" end-time="2018-04-02 13:51:14Z" duration="0.696638">
+  <command-line><![CDATA[.\..\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe  ".\..\ApplicationTests\bin\x64\Release\ApplicationTests.dll" --noheader --result=x64.Release.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1002" name="ApplicationTests.dll" fullname="C:\Users\shkolka\Documents\Visual Studio 2015\Projects\PS.COMNunitSample\ApplicationTests\bin\x64\Release\ApplicationTests.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 13:51:14Z" end-time="2018-04-02 13:51:14Z" duration="0.063059" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Users\shkolka\Documents\Visual Studio 2015\Projects\PS.COMNunitSample\.Batch" machine-name="ZT-89" user="shkolka" user-domain="MUNICH" culture="uk-UA" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\shkolka\Documents\Visual Studio 2015\Projects\PS.COMNunitSample\.Batch" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="12" />
+    </settings>
+    <properties>
+      <property name="_PID" value="9760" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1003" name="ApplicationTests" fullname="ApplicationTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 13:51:14Z" end-time="2018-04-02 13:51:14Z" duration="0.043413" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="ProgramTests" fullname="ApplicationTests.ProgramTests" classname="ApplicationTests.ProgramTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 13:51:14Z" end-time="2018-04-02 13:51:14Z" duration="0.038824" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1001" name="TestMain" fullname="ApplicationTests.ProgramTests.TestMain" methodname="TestMain" classname="ApplicationTests.ProgramTests" runstate="Runnable" seed="1720735037" result="Failed" label="Error" start-time="2018-04-02 13:51:14Z" end-time="2018-04-02 13:51:14Z" duration="0.028059" asserts="0">
+          <failure>
+            <message><![CDATA[System.Runtime.InteropServices.COMException : Retrieving the COM class factory for component with CLSID {5A184F91-9139-4E61-BAB8-364FA1F1608B} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).]]></message>
+            <stack-trace><![CDATA[   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at BusinessLogic.SomeImportantClass.ProcessMajorWithUnmanaged(Int32 nonce) in C:\Users\shkolka\Documents\Visual Studio 2015\Projects\PS.COMNunitSample\BusinessLogic\SomeImportantClass.cs:line 12
+   at ApplicationTests.ProgramTests.TestMain() in C:\Users\shkolka\Documents\Visual Studio 2015\Projects\PS.COMNunitSample\ApplicationTests\ProgramTests.cs:line 18]]></stack-trace>
+          </failure>
+          <output><![CDATA[---- Unmanaged COM ----
+Ultimate question
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

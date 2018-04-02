@@ -1,0 +1,36 @@
+// UnmanagedCOMComponent.idl : IDL source for UnmanagedCOMComponent
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (UnmanagedCOMComponent.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(98E919E4-5472-4917-B157-88B1955428C5),
+	dual,
+	pointer_default(unique)
+]
+interface IUnmanagedCOMClass : IDispatch
+{
+	HRESULT Test([in]int nonce, [out,retval]int *result);
+};
+
+[
+	uuid(86E6EF33-ED8F-4605-BDC5-CEEEEC3DBEDC),
+	version(1.0),
+]
+library UnmanagedCOMComponentLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(5A184F91-9139-4E61-BAB8-364FA1F1608B)		
+	]
+	coclass UnmanagedCOMClass
+	{
+		[default] interface IUnmanagedCOMClass;
+	};
+};
+

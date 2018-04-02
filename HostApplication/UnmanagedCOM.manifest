@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="UnmanagedCOM" version="1.0.0.0" />
+  <file name="UnmanagedCOMComponent.dll" >
+    <typelib tlbid="{86e6ef33-ed8f-4605-bdc5-ceeeec3dbedc}" version="1.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
+    <comClass clsid="{5a184f91-9139-4e61-bab8-364fa1f1608b}" threadingModel="Apartment" tlbid="{86e6ef33-ed8f-4605-bdc5-ceeeec3dbedc}" />
+  </file>
+</assembly>
